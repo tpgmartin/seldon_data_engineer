@@ -5,5 +5,5 @@ class RegressionModel(object):
     def __init__(self):
         self.model = joblib.load('RegressionModel.sav')
 
-    def predict(self,X):
+    def predict(self,X,feature_names):
         return self.model.predict(X)
